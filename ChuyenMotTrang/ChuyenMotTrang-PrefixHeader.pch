@@ -1,0 +1,32 @@
+//
+//  ChuyenMotTrang-PrefixHeader.pch
+//  ChuyenMotTrang
+//
+//  Created by Lê Đình Phúc on 2/5/16.
+//  Copyright © 2016 Lê Đình Phúc. All rights reserved.
+//
+
+#ifndef ChuyenMotTrang_PrefixHeader_pch
+#define ChuyenMotTrang_PrefixHeader_pch
+
+#import "AsyncImageView.h"
+#import "DataImage.h"
+#import "TableViewController.h"
+#import "InfomationCell.h"
+#import "CaptionCell.h"
+#import "ImageViewCell.h"
+#import "ActionCell.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
+#import <FBSDKCoreKit/FBSDKGraphRequest.h>
+#import "Reachability.h"
+#import "CommentViewControler.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ChuyenMotTrang_PrefixHeader_pch */
+
+

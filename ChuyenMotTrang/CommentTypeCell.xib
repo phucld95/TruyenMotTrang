@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTypeCell" rowHeight="125" id="KGk-i7-Jjw" customClass="CommentTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avataDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="G0X-gH-ZwW">
+                        <rect key="frame" x="8" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="bQ0-yl-fDH"/>
+                            <constraint firstAttribute="width" constant="45" id="vYx-di-LoE"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="✏️Comment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UP4-8Y-o8j">
+                        <rect key="frame" x="47" y="51" width="201" height="58.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh7-Oc-4u7">
+                        <rect key="frame" x="266" y="56" width="46" height="46"/>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="gve-Ff-B3f"/>
+                        </constraints>
+                        <state key="normal" image="Paper Plane Filled-30.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truyện một trang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFq-ao-k56">
+                        <rect key="frame" x="67" y="19" width="181" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="j88-Pl-6iO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="JFq-ao-k56" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="9lr-TP-2we"/>
+                    <constraint firstItem="JFq-ao-k56" firstAttribute="leading" secondItem="G0X-gH-ZwW" secondAttribute="trailing" constant="14" id="G2h-sL-SW3"/>
+                    <constraint firstItem="Uh7-Oc-4u7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="56" id="KUU-YX-fu6"/>
+                    <constraint firstAttribute="trailing" secondItem="Uh7-Oc-4u7" secondAttribute="trailing" constant="8" id="L9b-sY-dtP"/>
+                    <constraint firstItem="G0X-gH-ZwW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ssr-qZ-lAr"/>
+                    <constraint firstItem="G0X-gH-ZwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="T3U-C5-q3D"/>
+                    <constraint firstAttribute="bottom" secondItem="UP4-8Y-o8j" secondAttribute="bottom" constant="15" id="ZMY-YP-CuS"/>
+                    <constraint firstItem="UP4-8Y-o8j" firstAttribute="top" secondItem="JFq-ao-k56" secondAttribute="bottom" constant="8" id="dD8-Ql-9PT"/>
+                    <constraint firstItem="Uh7-Oc-4u7" firstAttribute="leading" secondItem="UP4-8Y-o8j" secondAttribute="trailing" constant="18" id="fke-IK-4qQ"/>
+                    <constraint firstAttribute="trailing" secondItem="JFq-ao-k56" secondAttribute="trailing" constant="72" id="hCl-wq-EhQ"/>
+                    <constraint firstAttribute="trailing" secondItem="UP4-8Y-o8j" secondAttribute="trailing" constant="72" id="jGV-0o-jJO"/>
+                    <constraint firstItem="UP4-8Y-o8j" firstAttribute="leading" secondItem="G0X-gH-ZwW" secondAttribute="trailing" constant="-6" id="mMg-fo-igQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avataUser" destination="G0X-gH-ZwW" id="Ghu-ou-zCz"/>
+                <outlet property="btPost" destination="Uh7-Oc-4u7" id="Wox-ru-6In"/>
+                <outlet property="lbAccount" destination="JFq-ao-k56" id="yxz-d8-Mrf"/>
+                <outlet property="tfComment" destination="UP4-8Y-o8j" id="R50-dl-F8d"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="371.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Paper Plane Filled-30.png" width="30" height="30"/>
+        <image name="avataDefault.png" width="330" height="316"/>
+    </resources>
+</document>

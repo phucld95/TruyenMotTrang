@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageViewCell" rowHeight="174" id="KGk-i7-Jjw" customClass="ImageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="172.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="full_placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-gg-Z81">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-y4-Zbf">
+                        <rect key="frame" x="150" y="76" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eT7-gg-Z81" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2X0-2Q-Gge"/>
+                    <constraint firstAttribute="trailing" secondItem="eT7-gg-Z81" secondAttribute="trailing" id="2o6-7s-uyg"/>
+                    <constraint firstAttribute="trailing" secondItem="eT7-gg-Z81" secondAttribute="trailing" id="6Ik-Yq-19h"/>
+                    <constraint firstItem="eT7-gg-Z81" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="C19-J0-Mq1"/>
+                    <constraint firstAttribute="trailing" secondItem="dvV-y4-Zbf" secondAttribute="trailing" constant="150" id="D9g-aN-WZY"/>
+                    <constraint firstItem="eT7-gg-Z81" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QqB-my-wmU"/>
+                    <constraint firstItem="dvV-y4-Zbf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="76" id="jcd-PI-iaO"/>
+                    <constraint firstItem="eT7-gg-Z81" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="n9u-gq-09m"/>
+                    <constraint firstItem="dvV-y4-Zbf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="150" id="nDX-GU-FRQ"/>
+                    <constraint firstAttribute="bottom" secondItem="eT7-gg-Z81" secondAttribute="bottom" id="s8O-qW-sPv"/>
+                    <constraint firstAttribute="bottom" secondItem="dvV-y4-Zbf" secondAttribute="bottom" constant="76.5" id="vbD-Ne-Sqr"/>
+                    <constraint firstItem="eT7-gg-Z81" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xrd-oy-vlw"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2X0-2Q-Gge"/>
+                        <exclude reference="2o6-7s-uyg"/>
+                        <exclude reference="QqB-my-wmU"/>
+                        <exclude reference="s8O-qW-sPv"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular">
+                    <mask key="constraints">
+                        <include reference="2X0-2Q-Gge"/>
+                        <include reference="2o6-7s-uyg"/>
+                        <include reference="QqB-my-wmU"/>
+                        <include reference="s8O-qW-sPv"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgImageView" destination="eT7-gg-Z81" id="jlQ-7U-Ccb"/>
+                <outlet property="loadImage" destination="dvV-y4-Zbf" id="hRk-Jc-zD0"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="140"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="full_placeholder.png" width="1920" height="1080"/>
+    </resources>
+</document>
